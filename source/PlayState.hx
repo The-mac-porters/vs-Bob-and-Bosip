@@ -1,8 +1,4 @@
 package;
-
-//import PixelateShader.Pixelate;
-
-//import sys.io.Process;
 import openfl.filters.BitmapFilter;
 import flixel.math.FlxRandom;
 import flixel.input.keyboard.FlxKey;
@@ -64,7 +60,8 @@ import openfl.filters.ShaderFilter;
 #if windows
 import Discord.DiscordClient;
 #end
-#if windows
+#if sys
+import sys.io.Process;
 import Sys;
 import sys.FileSystem;
 #end
