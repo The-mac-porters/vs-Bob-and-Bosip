@@ -34,16 +34,14 @@ import flixel.util.FlxSpriteUtil;
 import lime.app.Application;
 import openfl.Assets;
 import flash.geom.Point;
-import lime.app.Application;
-
+import lime.app.Application; 
+#if sys 
+import sys.thread.Thread;
+import Sys;
+import sys.FileSystem; 
+#end
 #if windows
 import Discord.DiscordClient;
-import Sys;
-import sys.FileSystem;
-#end
-
-#if cpp
-import sys.thread.Thread;
 #end
 
 using StringTools;
