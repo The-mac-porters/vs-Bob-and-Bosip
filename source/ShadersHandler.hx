@@ -10,7 +10,7 @@ class ShadersHandler
 	public static var directionalBlur:ShaderFilter = new ShaderFilter(new DirectionalBlur());
 	public static var scanline:ShaderFilter = new ShaderFilter(new Scanline());
 
-	public static function setChrome(chromeOffset:Float):Void
+	public static function setChrome(?chromeOffset:Float):Void
 	{
 		chromaticAberration.shader.data.rOffset.value = [chromeOffset];
 		chromaticAberration.shader.data.gOffset.value = [0.0];
