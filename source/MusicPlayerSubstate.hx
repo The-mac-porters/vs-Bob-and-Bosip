@@ -18,8 +18,10 @@ import flixel.system.FlxSound;
 
 #if windows
 import Discord.DiscordClient;
+#end 
+#if sys
 import Sys;
-import sys.FileSystem;
+import sys.FileSystem; 
 #end
 
 class MusicPlayerSubstate extends MusicBeatSubstate
